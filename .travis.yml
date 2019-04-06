@@ -25,6 +25,7 @@ npm run deploy
 branches:
   only:
   - master
+  - stable
 
 
 deploy:
