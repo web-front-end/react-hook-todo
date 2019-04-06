@@ -13,10 +13,17 @@
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+.app{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
 
 .todo-container{
-  width: 800px;
-  margin: auto;
+  width: 600px;
 }
 
 .todo-item{
