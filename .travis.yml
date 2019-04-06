@@ -18,7 +18,7 @@ deploy:
 dist: trusty
 env: 
   global: 
-    - GITHUB_TOKEN=859dbfa6edfa3e79de1d03481077d4aa7c1237cd
+    - GITHUB_TOKEN=425fc655ca0f21c9f18efd61fda63ae94837a6c6
     - GitHub_REF=github.com/web-front-end/react-hook-todo.git
     - TIMEOUT=1000
 language: node_js
