@@ -1,8 +1,8 @@
 {
-  "name": "react-hooks",
+  "name": "react-hook-todo",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://devilmikewu.github.io/react-hooks",
+  "homepage": "https://web-front-end.github.io/react-hook-todo",
   "dependencies": {
     "bootstrap": "^4.3.1",
     "enzyme": "^3.9.0",
