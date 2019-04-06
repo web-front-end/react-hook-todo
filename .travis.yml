@@ -1,0 +1,45 @@
+env:
+  global:
+    - GITHUB_TOKEN=3dcee82eee4bbe47f62e5626cc4dd44c77c2074a
+    - GitHub_REF=github.com/web-front-end/react-hook-todo.git
+    - TIMEOUT=1000
+
+
+sudo: false
+dist: trusty
+language: node_js
+node_js:
+- 8
+cache:
+  directories:
+  - node_modules
+script:
+- npm run test --watchAll
+after_success: 
+npm run deploy
+
+
+
+
+# safelist
+branches:
+  only:
+  - master
+
+
+deploy:
+  provider: script
+  skip_cleanup: true
+  keep_history: true
+  script: scripts/deploy-to-gh-pages.sh
+  on:
+    branch: master
+
+
+# deploy:
+#   provider: pages
+#   skip_cleanup: true
+#   github_token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
+#   keep_history: true
+#   on:
+#     branch: master
