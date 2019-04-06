@@ -1,6 +1,6 @@
 --- 
-after_success: 
-  - "npm run deploy"
+# after_success: 
+#   - "npm run deploy"
 branches: 
   only: 
     - master
@@ -8,12 +8,12 @@ branches:
 cache: 
   directories: 
     - node_modules
-deploy: 
-  keep_history: true
-  provider: script
-  script: scripts/deploy-to-gh-pages.sh
+deploy:
+  provider: pages
   skip_cleanup: true
-  true: 
+  github_token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
+  keep_history: true
+  on:
     branch: master
 dist: trusty
 env: 
