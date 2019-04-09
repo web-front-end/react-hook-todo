@@ -25,6 +25,6 @@ language: node_js
 node_js: 
   - 8
 script: 
-  - "npm run test --watchAll"
-  - "npm run build"
+  - "yarn run test --watchAll"
+  - "yarn run build"
 sudo: false
