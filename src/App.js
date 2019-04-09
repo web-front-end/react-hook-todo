@@ -1,15 +1,16 @@
-import React, { Component } from 'react';
-import Todo from './components/Todo';
-import './App.css';
+/* eslint-disable no-unused-vars */
+import React, { Component } from 'react'
+import Todo from './components/Todo'
+import './App.css'
 
 class App extends Component {
-  render() {
+  render () {
     return (
       <div className="app">
         <Todo />
       </div>
-    );
+    )
   }
 }
 
-export default App;
+export default App

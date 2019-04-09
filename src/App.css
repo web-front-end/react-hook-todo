@@ -33,7 +33,7 @@
 
 .todo-item svg{
   width: 16px;
-  cursor: pointer;
+  cursor: pointer;  
 }
 
 .todo-item span{
@@ -46,3 +46,22 @@
 .todo-item span.complete{
  text-decoration: line-through;
 }
+
+.action-footer{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.action-footer .action span{
+  cursor: pointer;
+  color: green;
+  margin-right: 10px;
+  padding: 0 5px; 
+  border: 1px solid transparent;
+}
+
+.action-footer .action span.active{
+  border-color: green;
+}
+
