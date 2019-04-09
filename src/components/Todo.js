@@ -1,18 +1,20 @@
-import React from 'react';
+/* eslint-disable no-unused-vars */
+import React from 'react'
 
-import TodoForm from './TodoForm';
-import TodoList from './TodoList';
-import {useTodoState} from './hooks';
-
+import TodoForm from './TodoForm'
+import TodoList from './TodoList'
+import Footer from './Footer'
+import { useTodoState } from './hooks'
 
 const Todo = () => {
-    const {addTodo, todos, deleteTodo,toggleTodo } = useTodoState();
-    return (
-        <div className='todo-container'>
-          <TodoForm addTodo={addTodo}/>
-          <TodoList todos={todos} deleteTodo={deleteTodo} toggleTodo={toggleTodo}/> 
-        </div>
-    )
+  const { addTodo, todos, deleteTodo, toggleTodo, filterTodos, status } = useTodoState()
+  return (
+    <div className='todo-container'>
+      <TodoForm addTodo={addTodo}/>
+      <TodoList todos={todos} deleteTodo={deleteTodo} toggleTodo={toggleTodo}/>
+      <Footer todos={todos} filterTodos={filterTodos} status={status}/>
+    </div>
+  )
 }
 
-export default Todo;
+export default Todo

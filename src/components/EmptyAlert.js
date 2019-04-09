@@ -1,5 +1,6 @@
-import React from "react";
-import { Alert } from "react-bootstrap";
+/* eslint-disable no-unused-vars */
+import React from 'react'
+import { Alert } from 'react-bootstrap'
 
 const EmptyAlert = () => {
   return (
@@ -9,7 +10,7 @@ const EmptyAlert = () => {
         there is no todo item existed.
       </p>
     </Alert>
-  );
-};
+  )
+}
 
-export default EmptyAlert;
+export default EmptyAlert

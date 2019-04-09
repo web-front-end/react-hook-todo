@@ -1,6 +1,7 @@
-import React from "react";
-import TodoItem from "./TodoItem";
-import EmptyAlert from "./EmptyAlert";
+/* eslint-disable no-unused-vars */
+import React from 'react'
+import TodoItem from './TodoItem'
+import EmptyAlert from './EmptyAlert'
 
 const TodoList = ({ todos, deleteTodo, toggleTodo }) => {
   return todos && todos.length > 0 ? (
@@ -14,7 +15,7 @@ const TodoList = ({ todos, deleteTodo, toggleTodo }) => {
     ))
   ) : (
     <EmptyAlert />
-  );
-};
+  )
+}
 
-export default TodoList;
+export default TodoList
