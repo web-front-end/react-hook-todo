@@ -10,6 +10,7 @@ const Todo = () => {
   const { addTodo, todos, deleteTodo, toggleTodo, filterTodos, status } = useTodoState()
   return (
     <div className='todo-container'>
+      <h1>Todo List</h1>
       <TodoForm addTodo={addTodo}/>
       <TodoList todos={todos} deleteTodo={deleteTodo} toggleTodo={toggleTodo}/>
       <Footer todos={todos} filterTodos={filterTodos} status={status}/>
